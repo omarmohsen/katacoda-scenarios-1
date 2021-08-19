@@ -4,7 +4,7 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1 - Scenario Structure",
+        "title": "Step 1 - Clonning the Hello-World repo",
         "text": "step1.md"
       },
       {
@@ -35,6 +35,6 @@
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "nodejs:12"
+    "imageid": "centos"
   }
 }
