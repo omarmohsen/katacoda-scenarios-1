@@ -2,7 +2,7 @@ Now lets run our Image
 
 Once you run the image, now its called a container
 
-To run it, execute this command `docker run summer-academy-hello-world`{{execute}}
+To run it, execute this command `docker run -d summer-academy-hello-world`{{execute}}
 
 To check your container execute `docker ps | grep summer-academy-hello-world`{{execute}}
 
