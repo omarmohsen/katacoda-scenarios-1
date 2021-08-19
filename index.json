@@ -34,7 +34,7 @@
     }
   },
   "environment": {
-    "uilayout": "terminal-editor"
+    "uilayout": "terminal"
   },
   "backend": {
     "imageid": "centos"
