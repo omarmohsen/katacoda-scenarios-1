@@ -1,9 +1,7 @@
-Within each step, a series of Markdown extensions have been created that can provide various details for the users' experience.
+In this step we are going to run the Dockerfile to build our image
 
-For example, commands such as `echo "Run in Terminal"`{{execute}}
- can be executed by clicking the command.
+In this image we will add the hello-world application in it and we will expose a port so you can check it out and see the results yourself
 
-This is done by adding `execute` to the markdown code block, for example:
-<pre>`echo "Run in Terminal"`{{execute}}</pre>
+Execute `docker build -name summer-academy-hello-world.`{{execute}} to build your image
 
-More can be found at the scenario [on Markdown extensions](https://katacoda.com/scenario-examples/scenarios/markdown-extensions).
+Now you can see the built image through this command `docker images | grep summer-academy-hello-world`{{execute}}

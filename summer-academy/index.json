@@ -1,6 +1,6 @@
 {
-  "title": "Creating Your First Katacoda Scenario",
-  "description": "Learn how to create your first Katacoda scenario",
+  "title": "Summer academy",
+  "description": "Dell's Summer Academy workshop",
   "details": {
     "steps": [
       {
@@ -8,20 +8,16 @@
         "text": "step1.md"
       },
       {
-        "title": "Step 2 - Scenario Syntax",
+        "title": "Step 2 - Building the image",
         "text": "step2.md"
       },
       {
-        "title": "Step 3 - CLI",
+        "title": "Step 3 - Running the image",
         "text": "step3.md"
       },
       {
-        "title": "Step 4 - VS Code Extension",
+        "title": "Step 4 - Checking the Hello-World app",
         "text": "step4.md"
-      },
-      {
-        "title": "Step 5 - WebHooks",
-        "text": "step5.md"
       }
     ],
     "intro": {
