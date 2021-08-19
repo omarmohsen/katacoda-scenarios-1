@@ -31,6 +31,6 @@
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "docker"
+    "imageid": "python:3.8"
   }
 }
