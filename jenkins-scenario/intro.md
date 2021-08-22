@@ -1,0 +1,1 @@
+In this learning lab, you'll build Jenkins using a Docker image based on a Dockerfile. learn how to configure Jenkins to build Docker. You will then install Blue Ocean to then start building your first CI/CD pipeline.
