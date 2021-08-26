@@ -24,15 +24,13 @@ pipeline {
     node {
       label 'test'              //put your agent name betyouen these 2 quoets ''
     }
-  }
-  
+  } 
 	stages {                    //declare that this is the stages that the pipeline will executes its commands, it may containe as much stages as you will need.
 		stage (''){             //declare your first stage.
 			steps{              //where you will type the commands that will be executed.
 				
 			} 
-		}
-			
+		}			
 		stage (''){
 			steps{
 				
