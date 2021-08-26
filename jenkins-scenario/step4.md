@@ -19,12 +19,11 @@ So follow these steps to create your pipeline:
 6- Paste the follwoing in the `Pipeline` section, this is the basic structure of the pipeline.
 
 `
-
 pipeline {
     
   agent {                       //this is where you specify your agent name
     node {
-      label 'test'              //put your agent name betyouen these 2 quoets ''
+      label 'test'              //put your agent name betyouen these 2 quoets
     }
   } 
 
@@ -41,7 +40,6 @@ pipeline {
 		}
 	}
 }
-
 `
 
 This is the basic structure of our pipeline, you will modify it as you proceed with the upcomming steps.
