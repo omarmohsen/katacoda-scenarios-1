@@ -3,7 +3,7 @@
     "title": "Building Docker Images using Jenkins Pipeline",
     "description": "Dell's Summer Academy workshop",
     "difficulty": "Advanced",
-    "time": "15-20 minutes",
+    "time": "30-40 minutes",
     "details": {
         "steps": [
             {
