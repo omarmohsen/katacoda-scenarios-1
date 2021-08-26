@@ -10,7 +10,7 @@ So, we will substitute the `run python app` stage with the following:
 		}
 `
 
-This stage will build a Docker container for the application with the `/var/lib/jenkins/workspace/django-pipeline/docker/Dockerfile`{{open}}
+This stage will build a Docker container for the application with the `/root/workspace/django-pipeline/docker/Dockerfile`{{open}}
 
 Now lets Run the pipeline and test the stages you made.
 

@@ -29,7 +29,7 @@ a- For `Kind`, select `SSH username and private key`.
 
 b- For `Scope`, select `Global`.
 
-c- For `ID`, type `agentid`.
+c- For `ID`, type `agent`.
 
 d- For `Username`, type `root`.
 
@@ -43,7 +43,7 @@ f- Click `Private Key` check mark, then click `Add` button and add the Private k
 
 12- Click `Save`.
 
-13- Click `Ok`.
+13- To view the progress, Click you agent you just created, the Click `logs`.
 
 Wait till its successfully connected.
 

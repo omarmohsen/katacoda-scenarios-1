@@ -1,7 +1,7 @@
 In this step, you will configure a stage to run unit test on the code you cloned from the repository.
 
 `
-		stage ('run tests'){
+		stage ('Running unit tests'){
 			steps{
 				sh 'python3 manage.py test blog'
 			}
