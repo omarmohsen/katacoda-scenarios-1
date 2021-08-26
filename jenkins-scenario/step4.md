@@ -18,7 +18,7 @@ So follow these steps to create your pipeline:
 
 6- Paste the follwoing in the `Pipeline` section, this is the basic structure of the pipeline.
 
-`
+```
 pipeline {
     
   agent {                       //this is where you specify your agent name
@@ -26,8 +26,7 @@ pipeline {
       label 'test'              //put your agent name betyouen these 2 quoets
     }
   } 
-`
-`
+
 	stages {                    //declare that this is the stages that the pipeline will executes its commands, it may containe as much stages as you will need.
 		stage (''){             //declare your first stage.
 			steps{              //where you will type the commands that will be executed.
@@ -41,6 +40,6 @@ pipeline {
 		}
 	}
 }
-`
+```
 
 This is the basic structure of our pipeline, you will modify it as you proceed with the upcomming steps.
