@@ -1,23 +1,20 @@
 {
-  "title": "Docker Scenario",
+  "title": "Django App Deployment",
+  "difficulty": "Easy",
   "description": "Dell's Summer Academy workshop",
   "details": {
     "steps": [
       {
-        "title": "Step 1 - Clonning the Hello-World repo",
+        "title": "Step 1 - Cloning the Django App",
         "text": "step1.md"
       },
       {
-        "title": "Step 2 - Building the image",
+        "title": "Step 2 - Installing Django App prerequisites",
         "text": "step2.md"
       },
       {
-        "title": "Step 3 - Running the image",
+        "title": "Step 3 - Running the Django App",
         "text": "step3.md"
-      },
-      {
-        "title": "Step 4 - Checking the Hello-World app",
-        "text": "step4.md"
       }
     ],
     "intro": {
@@ -31,6 +28,7 @@
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "ubuntu"
+    "imageid": "ubuntu",
+    "port": 8000
   }
 }

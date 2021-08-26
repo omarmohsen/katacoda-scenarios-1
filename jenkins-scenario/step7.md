@@ -1,4 +1,4 @@
-In this step, you will configure a stage to run unit test on the code you clonned from the reposatory.
+In this step, you will configure a stage to run unit test on the code you cloned from the repository.
 
 `
 		stage ('Running unit tests'){

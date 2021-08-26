@@ -7,7 +7,7 @@ To do that, you will need to expose you username and password in your pipeline, 
 To do so, you will have to create Jenkins credentials, to keep your username and password secret.
 
 
-If you dont have DockerHub account, do the follwoing:
+If you don't have DockerHub account, follow these teps:
 
 1- Create one from https://hub.docker.com/signup
 
@@ -39,4 +39,3 @@ Then do the following to create a Jenkins credentials:
 Now your credentials are created, you will use this ID to recall your credentials in the pipeline.
 
 Lets proceed with our final stage to push our image to the DockerHub.
-

@@ -2,7 +2,7 @@ Now you are ready to create the pipeline.
 
 You wont have to know the syntax of the pipeline, thats not the purpose of this scenario.
 
-you will give you the synatx to paste it and describe in details what exactly this does.
+you will give you the syntax to paste it and describe in details what exactly this does.
 
 So follow these steps to create your pipeline:
 
@@ -16,30 +16,27 @@ So follow these steps to create your pipeline:
 
 5- Scroll to the bottom to the `Pipeline` section, this is where you will type your groovy code in.
 
-6- Paste the follwoing in the `Pipeline` section, this is the basic structure of the pipeline.
+6- Paste the following in the `Pipeline` section, this is the basic structure of the pipeline.
 
-```
-pipeline {
-    
-  agent {                       //this is where you specify your agent name
+`pipeline {
+  agent {                       //Agent name specification
     node {
-      label 'test'              //put your agent name betyouen these 2 quoets
+      label 'test'              //Specify agent name
     }
-  } 
+  }
 
-	stages {                    //declare that this is the stages that the pipeline will executes its commands, it may containe as much stages as you will need.
-		stage (''){             //declare your first stage.
-			steps{              //where you will type the commands that will be executed.
-				
-			} 
-		}			
+	stages {                    //State stages of pipeline
+		stage (''){             //Declare your first stage. (all stages must be inside the stages block)
+			steps{              //Block containing steps to be executed
+			}
+		}
+
 		stage (''){
 			steps{
-				
 			}
 		}
 	}
 }
 ```
 
-This is the basic structure of our pipeline, you will modify it as you proceed with the upcomming steps.
+This is the basic structure of our pipeline, you will modify it as you proceed with the upcoming steps.
