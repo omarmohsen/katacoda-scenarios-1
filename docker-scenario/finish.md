@@ -1,1 +1,0 @@
-Congratulations. You have completed the workshop, we hope that you had a fun and great time
