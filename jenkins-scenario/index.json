@@ -35,24 +35,20 @@
                 "text": "step7.md"
             },
             {
-                "title": "Fourth stage (Run the application)",
+                "title": "Fourth stage modifcation (Build application using docker)",
                 "text": "step8.md"
             },
             {
-                "title": "Fourth stage modifcation (Build application using docker)",
+                "title": "Fifth stage (Run application using docker)",
                 "text": "step9.md"
             },
             {
-                "title": "Fifth stage (Run application using docker)",
+                "title": "Create Jenkins Credentials",
                 "text": "step10.md"
             },
             {
-                "title": "Create Jenkins Credentials",
+                "title": "Sixth stage (push you image to DockerHub)",
                 "text": "step11.md"
-            },
-            {
-                "title": "Fifth stage (push you image to DockerHub)",
-                "text": "step12.md"
             }
         ],
         "intro": {
@@ -66,7 +62,7 @@
     "environment": {
         "showdashboard": true,
         "dashboard": "Dashboard",
-        "uilayout": "terminal-iframe",
+        "uilayout": "editor-terminal-iframe",
         "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
     },
     "backend": {

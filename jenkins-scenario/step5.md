@@ -23,9 +23,9 @@ Now, Lets test the stage you made:
 
 4- If it runs successfully (green), skip this step, and in case its red you may find where is the error by doing the follwong:
 
-    a- In `Build Histroy` secton on the bottom left, click on the failed red build.
+a- In `Build Histroy` secton on the bottom left, click on the failed red build.
 
-    b- Click `Console output`, this will open the log where jenkins ran and failed, troubleshoot and fix your error.
+b- Click `Console output`, this will open the log where jenkins ran and failed, troubleshoot and fix your error.
 
 5- Now lets check our clonned reposatory on the workspace, `ls -ltr /root/workspace/django-pipeline`{{execute}}, you should see the contents of the reposatory on your workspace.
 

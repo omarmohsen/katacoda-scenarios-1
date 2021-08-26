@@ -23,7 +23,9 @@ Please follow these steps to install the above plugings:
 
 4- Search for the plugins you want to install, and check their box.
 
-5- Click `Install without restart`
+5- Click `Download and restart`.
+
+6- Check the Box `Restart Jenkins when installation is complete and no jobs are running`.
 
 
 Now you have installed the plugins you will need for creating your pipeline.

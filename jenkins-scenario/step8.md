@@ -1,19 +1,19 @@
-Now for the most exciting part.
+Running the application directly on the host is not the best practice, its better to run on a container, and thats what we are going to do in this step.
 
-You are going to add a stage to run our appliction.
-
-Add the follwoing stage:
+So, we will subistitute the `run python app` stage with the follwong:
 
 `
-		stage ('run python app'){
+		stage ('Build docker image'){
 			steps{
-				sh 'python3 manage.py runserver 0.0.0.0:8000 &'
+				sh 'docker build -t django-blog -f docker/Dockerfile . '
 			}
 		}
 `
 
+This stage will build a Docker container for the application with the `/var/lib/jenkins/workspace/django-pipeline/docker/Dockerfile`{{open}}
+
 Now lets Run the pipeline and test the stages you made.
 
-If it passed, proceed with the next step, if not please troubleshoot and test again.
+Also you may check your image is created by excecuting `docker images`{{execute}}
 
-Lets now access ths URL to check the application on port `8000` [tcp://[[HOST_IP]]:8000/register](tcp://[[HOST_IP]]:8000/register)
+If it passed, proceed with the next step, if not please troubleshoot and test again.

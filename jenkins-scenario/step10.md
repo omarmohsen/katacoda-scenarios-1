@@ -1,23 +1,42 @@
-In this step, we will add a stage to run the image we made in the previous one
+After we made sure that the application is running with Docker container, you may want to use it later or on another server or even share it with others.
 
-Add the follwoing stage:
+So we will push it to DockerHub.
 
-`
-		stage ('Run docker container'){
-			steps{
-				sh 'docker run --rm  -d -p 8001:8000 django-blog'
-			}
-		}
-`
+To do that, you will need to expose you username and password in your pipeline, and this is not a best practice.
 
-This stage will build a Docker container for the application with the `/var/lib/jenkins/workspace/django-pipeline/docker/Dockerfile`{{open}}
+To do so, you will have to create Jenkins credentials, to keep your username and password secret.
 
-Before running the pipeline, make sure to stop the process for the Django application is already running, beacuse it will take the same port number, so execute `killall python`{{execute}}
 
-Now lets Run the pipeline and test the stages you made.
+If you dont have DockerHub account, do the follwoing:
 
-Now check your container if itsrunning by excecuting `docker ps`{{execute}}
+1- Create one from https://hub.docker.com/signup
 
-If it passed, proceed with the next step, if not please troubleshoot and test again.
+2- Verify your email
 
-Lets now access ths URL to check the application on port `8001` [tcp://[[HOST_IP]]:8001/register](tcp://[[HOST_IP]]:8001/register)
+
+Then do the following to create a Jenkins credentials:
+
+1- Click `Manage Jenkins` from the left panel.
+
+2- Under `security` section, click `Manage Credentials`.
+
+3- Click any domain in the `Domain` column.
+
+4- On the top left, click `Add Credentials`.
+
+5- For `Kind`, select `Username and Password`
+
+6- For `Scope`, select `Global`.
+
+7- For `Username`, type `<your-dockrhub-username>`.
+
+8- For `Password`, type `<your-dockrhub-username>`.
+
+9- For `ID`, type `summeracademyid`
+
+10- Click `Save`.
+
+Now your credentials are created, you will use this ID to recall your credentials in the pipeline.
+
+Lets proceed with our final stage to push our image to the DockerHub.
+
