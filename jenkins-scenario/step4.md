@@ -4,7 +4,6 @@ You wont have to know the syntax of the pipeline, thats not the purpose of this 
 
 you will give you the synatx to paste it and describe in details what exactly this does.
 
-
 So follow these steps to create your pipeline:
 
 1- Click `New Item`.

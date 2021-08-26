@@ -10,7 +10,7 @@ So, paste the follwong as your second stage after the prevous one:
 		}
 `
 
-in the `/var/lib/jenkins/workspace/django-pipeline/requirments.txt`{{open}} file, you will find a list of packages that python will need to run the Django application
+in the `/root/workspace/django-pipeline/requirments.txt`{{open}} file, you will find a list of packages that python will need to run the Django application
 
 Now lets Run the pipeline and test the stages you made.
 

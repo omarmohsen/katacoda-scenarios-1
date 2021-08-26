@@ -27,6 +27,6 @@ Now, Lets test the stage you made:
 
     b- Click `Console output`, this will open the log where jenkins ran and failed, troubleshoot and fix your error.
 
-5- Now lets check our clonned reposatory on the workspace, `ls -ltr /var/lib/jenkins/workspace/django-pipeline`{{execute}}, you should see the contents of the reposatory on your workspace.
+5- Now lets check our clonned reposatory on the workspace, `ls -ltr /root/workspace/django-pipeline`{{execute}}, you should see the contents of the reposatory on your workspace.
 
 Lets proceed with the next stage.

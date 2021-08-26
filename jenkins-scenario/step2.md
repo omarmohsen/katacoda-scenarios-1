@@ -7,13 +7,11 @@ First, lets install all the nessessary plugins that you will need, to configure 
 
 You will need to install the follwoing plugins to help you in your pipline:
 
-- 
+- git
 
--
+- pipeline
 
--
-
--
+- Docker Plugin
 
 Please follow these steps to install the above plugings:
 

@@ -16,4 +16,4 @@ Now lets Run the pipeline and test the stages you made.
 
 If it passed, proceed with the next step, if not please troubleshoot and test again.
 
-Lets now access ths URL to check the application on port `8000` [tcp://[[HOST_IP]]:8000](tcp://[[HOST_IP]]:8000)**
+Lets now access ths URL to check the application on port `8000` [tcp://[[HOST_IP]]:8000/register](tcp://[[HOST_IP]]:8000/register)

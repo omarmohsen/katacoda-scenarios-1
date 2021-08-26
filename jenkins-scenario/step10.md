@@ -20,4 +20,4 @@ Now check your container if itsrunning by excecuting `docker ps`{{execute}}
 
 If it passed, proceed with the next step, if not please troubleshoot and test again.
 
-Lets now access ths URL to check the application on port `8000` [tcp://[[HOST_IP]]:8000](tcp://[[HOST_IP]]:8000)**
+Lets now access ths URL to check the application on port `8001` [tcp://[[HOST_IP]]:8001/register](tcp://[[HOST_IP]]:8001/register)
