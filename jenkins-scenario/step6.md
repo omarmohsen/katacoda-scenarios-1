@@ -1,13 +1,17 @@
-Once the build has completed you should see the Image and Tags using the Docker CLI `docker images`{{execute}}.
+Next you will need to add a stage to install some prerequisits on your machine that will help run your application, since the application is written in python.
 
-What was built into the Docker Image was a small HTTP server. You can launch it using:
-`docker run -d -p 80:80 katacoda/jenkins-demo:latest`{{execute}}
+So, paste the follwong as your second stage after the prevous one:
 
-Using cURL you should see the server respond:
-`curl docker`{{execute}}
+`
+		stage ('Install python requirements'){
+			steps{
+				sh 'pip3 install -r requirements.txt'
+			}
+		}
+`
 
-Jenkins will have the console output of our build, available via the dashboard. You should be able to access it below:
+in the `/var/lib/jenkins/workspace/django-pipeline/requirments.txt`{{open}} file, you will find a list of packages that python will need to run the Django application
 
-https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/job/Katacoda%20Jenkins%20Demo/1/console
+Now lets Run the pipeline and test the stages you made.
 
-If you rebuilt the project, you would see a version 2 image created and the _:latest_ tag reattached.
+If it passed, proceed with the next step, if not please troubleshoot and test again.

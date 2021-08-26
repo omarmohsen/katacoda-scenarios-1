@@ -1,12 +1,32 @@
-We now have a configured job that will build Docker Images based on our Git repository. The next stage is to test and try it.
+For the first stage, you will need to clone the reposatory where our application wll be.
 
-#### Task: Build
-On the left-hand side, select **Build Now**. You should see a build scheduled with a message "(pending—Waiting for next available executor)".
+So, as your first stage, you will need to paste the follwong:
 
-In the background, Jenkins is launching the container and connecting to it via SSH. Sometimes this can take a moment or two.
+`
+		stage ('clone '){
+			steps{
+				git url: 'https://github.com/omarmohsen/django-blog'
+			} 
+		}
+`
 
-You can see the progress using `docker logs --tail=10 jenkins`{{execute}}
+this stage will clone or download the files and directories on this repo to the jenkins workspace.
 
-As it's a container, you can view it using the Docker CLI tools `docker ps -a`{{execute}}
 
-It's normal for this to take a few moments to complete.
+Now, Lets test the stage you made:
+
+1- after completing your code, click `Save`.
+
+2- On the left panel, click `Build Now`, this will start your pipeline.
+
+3- See how it goes, if its green then you did it right, if it turns red means that you did something wrong and you will have to revisit your code.
+
+4- If it runs successfully (green), skip this step, and in case its red you may find where is the error by doing the follwong:
+
+    a- In `Build Histroy` secton on the bottom left, click on the failed red build.
+
+    b- Click `Console output`, this will open the log where jenkins ran and failed, troubleshoot and fix your error.
+
+5- Now lets check our clonned reposatory on the workspace, `ls -ltr /var/lib/jenkins/workspace/django-pipeline`{{execute}}, you should see the contents of the reposatory on your workspace.
+
+Lets proceed with the next stage.

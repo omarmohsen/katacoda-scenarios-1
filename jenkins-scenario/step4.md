@@ -1,26 +1,46 @@
-This step creates a new project which Jenkins will build via our new agent. The project source code is at https://github.com/katacoda/katacoda-jenkins-demo. The repository has a Dockerfile; this defines the instructions on how to produce the Docker Image. Jenkins doesn't need to know the details of how our project is built.
+Now you are ready to create the pipeline.
 
-#### Task: Create New Job
+You wont have to know the syntax of the pipeline, thats not the purpose of this scenario.
 
-1. On the Jenkins dashboard, select **Create new jobs**
-2. Give the job a friendly name such as **Katacoda Jenkins Demo** and select **Freestyle project**.
-3. The build will depend on having access to Docker. Using the "Restrict where this project can be run" we can define the label we set of our configured Docker agent. The set "Label Expression" to **docker-agent**. You should have a configuration of "Label is serviced by no nodes and 1 cloud".
-4. Select the Repository type as **Git** and set the Repository to be **https://github.com/katacoda/katacoda-jenkins-demo**. If Git is not in the "Source Code Management" list, you need to install the Git plugin as mentioned in step 2.
-5. We can now add a new Build Step using the dropdown. Select **Execute Shell**.
-6. Because the logical of how to build is specified in our Dockerfile, Jenkins only needs to call build and specify a friendly name.
+you will give you the synatx to paste it and describe in details what exactly this does.
 
-In this example, use the following commands.
 
-```
-ls
-docker info
-docker build -t katacoda/jenkins-demo:${BUILD_NUMBER} .
-docker tag katacoda/jenkins-demo:${BUILD_NUMBER} katacoda/jenkins-demo:latest
-docker images
-```
+So follow these steps to create your pipeline:
 
-The first stage lists all the files in the directory which will be built. When calling _docker build_ we use the Jenkins build number as the image tag. This allows us to version our Docker Images. We also tag the build with _latest_.
+1- Click `New Item`.
 
-At this point, or in an additional step, you could execute a `docker push` to upload the image to a centralised Docker Registry.
+2- Select `Pipeline`.
 
-7. Our build is now complete. Click **Save**.
+3- Give it a name, `django-pipeline`.
+
+4- Click `Ok`, this will open a new page for you.
+
+5- Scroll to the bottom to the `Pipeline` section, this is where you will type your groovy code in.
+
+6- Paste the follwoing in the `Pipeline` section, this is the basic structure of the pipeline.
+
+`
+pipeline {
+  agent {                       \\this is where you specify your agent name
+    node {
+      label 'test'              \\put your agent name betyouen these 2 quoets ''
+    }
+  }
+  
+	stages {                    \\declare that this is the stages that the pipeline will executes its commands, it may containe as much stages as you will need.
+		stage (''){             \\declare your first stage.
+			steps{              \\where you will type the commands that will be executed.
+				
+			} 
+		}
+			
+		stage (''){
+			steps{
+				
+			}
+		}
+	}
+}	
+`
+
+This is the basic structure of our pipeline, you will modify it as you proceed with the upcomming steps.

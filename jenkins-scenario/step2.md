@@ -1,15 +1,33 @@
-The first step is to configure the [Docker plugin](https://wiki.jenkins-ci.org/display/JENKINS/Docker+Plugin). The plugin is based on a Jenkins Cloud plugin. When a build requires Docker, it will create a "Cloud Agent" via the plugin. The agent will be a Docker Container configured to talk to our Docker Daemon.
+After installing Jenkins, lets access it and configure our environment.
 
-The Jenkins build job will use this container to execute the build and create the image before being stopped. The Docker Image will be stored on the configured Docker Daemon. The Image can then be pushed to a Docker Registry ready for deployment.
+So access it from here:
+https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/
 
-#### Task: Install Plugin
+First, lets install all the nessessary plugins that you will need, to configure and start our pipeline for the application you will run.
 
-1. Within the Dashboard, select **Manage Jenkins** on the left.
-2. On the Configuration page, select **Manage Plugins**.
-3. Manage Plugins page will give you a tabbed interface. Click **Available** to view all the Jenkins plugins that can be installed.
-4. Using the search box, search for **Docker plugin**. There are multiple Docker plugins, select **Docker plugin** using the checkbox.
-5. While on this page, install the **Git plugin** for obtaining the source code from a Git repository.
-6. Click **Install without Restart** at the bottom.
-7. The plugins will now be downloaded and installed. Once complete, click the link **Go back to the top page**.
+You will need to install the follwoing plugins to help you in your pipline:
 
-Your Jenkins server can now be configured to build Docker Images.
+- 
+
+-
+
+-
+
+-
+
+Please follow these steps to install the above plugings:
+
+1- Click `Manage Jenkins` from the left panel.
+
+2- Click `Manage Plugings`.
+
+3- Click `Available` tab.
+
+4- Search for the plugins you want to install, and check their box.
+
+5- Click `Install without restart`
+
+
+Now you have installed the plugins you will need for creating your pipeline.
+
+Next, you will configure your Jenkins agent.

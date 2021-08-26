@@ -1,41 +1,64 @@
 {
     "pathwayTitle": "Jenkins",
-    "title": "Building Docker Images using Jenkins",
+    "title": "Building Docker Images using Jenkins Pipeline",
     "description": "Dell's Summer Academy workshop",
     "difficulty": "Advanced",
     "time": "15-20 minutes",
     "details": {
         "steps": [
             {
-                "title": "Launch Jenkins",
+                "title": "Install Jenkins and Docker",
                 "text": "step1.md"
             },
             {
-                "title": "Configure Docker Plugin",
+                "title": "Access Jenkins and install plugins",
                 "text": "step2.md"
             },
             {
-                "title": "Add Docker Agent",
+                "title": "Configure the Jenkins agent",
                 "text": "step3.md"
             },
             {
-                "title": "Create Build Project",
+                "title": "Create the Pipeline",
                 "text": "step4.md"
             },
             {
-                "title": "Build Project",
+                "title": "First stage (Clonning the repo)",
                 "text": "step5.md"
             },
             {
-                "title": "View Console Output",
+                "title": "Second stage (Run application prerequisites)",
                 "text": "step6.md"
+            },
+            {
+                "title": "Third stage (Run the unit test)",
+                "text": "step7.md"
+            },
+            {
+                "title": "Fourth stage (Run the application)",
+                "text": "step8.md"
+            },
+            {
+                "title": "Fourth stage modifcation (Build application using docker)",
+                "text": "step9.md"
+            },
+            {
+                "title": "Fifth stage (Run application using docker)",
+                "text": "step10.md"
+            },
+            {
+                "title": "Create Jenkins Credentials",
+                "text": "step11.md"
+            },
+            {
+                "title": "Fifth stage (push you image to DockerHub)",
+                "text": "step12.md"
             }
         ],
         "intro": {
-            "text": "intro.md",
-            "courseData": "courseBase.sh",
-            "credits": ""
+            "text": "intro.md"
         },
+
         "finish": {
             "text": "finish.md"
         }

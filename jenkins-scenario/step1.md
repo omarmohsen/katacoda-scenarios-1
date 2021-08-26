@@ -1,16 +1,22 @@
-The environment has a Jenkins server running as a Docker Container. You can view the status using `docker ps`{{execute}}.
+You are going to run Jenkins on a Docker container on the host.
 
-The command used to launch the container was:
+Dell's DevOps team already created a Jenkins Docker image, so you can use it in our scenario.
 
+Execute the following comand to run the Jenkins Docker container:
 `docker run -d -u root --name jenkins \
     -p 8080:8080 -p 50000:50000 \
     -v /root/jenkins:/var/jenkins_home \
-    jenkins:1.651.1-alpine`
+    omarmohsen/jenkins-sa`{{execute}}
 
-All plugins and configurations get persisted to the host at _/root/jenkins_. Port 8080 opens the web dashboard, 50000 is used to communicate with other Jenkins agents. Finally, the image has an alpine base to reduce the size footprint.
+Meaning of the parameters used in the `docker run` command:
+-d --> runs in the background
+--name --> name of the container running
+-p --> the port number where you can access the container
+-v --> the volume attached to the Jenkins container
 
-#### Load Dashboard
 
-You can load the Jenkins' dashboard via the following URL https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/
+Now lets check that our container is running
 
-In the next steps, you'll use the dashboard to configure the plugins and start building Docker Images.
+`docker ps`{{execute}}
+
+In the next steps, you'll use the Jenkins dashboard to configure the plugins and start building the Pipeline.
