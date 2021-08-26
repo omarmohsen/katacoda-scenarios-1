@@ -1,7 +1,5 @@
 Running the application directly on the host is not the best practice, its better to run on a container, and thats what we are going to do in this step.
 
-So, we will subistitute the `run python app` stage with the follwong:
-
 `
 		stage ('Build docker image'){
 			steps{
@@ -10,7 +8,7 @@ So, we will subistitute the `run python app` stage with the follwong:
 		}
 `
 
-This stage will build a Docker container for the application with the `/var/lib/jenkins/workspace/django-pipeline/docker/Dockerfile`{{open}}
+This stage will build a Docker container for the application with the `/root/workspace/django-pipeline/docker/Dockerfile`{{open}}
 
 Now lets Run the pipeline and test the stages you made.
 

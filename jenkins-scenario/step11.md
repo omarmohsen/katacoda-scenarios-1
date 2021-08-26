@@ -7,12 +7,13 @@ So, paste the follwong as your second stage after the prevous one:
 			steps{
 				script {						
 					withCredentials([usernamePassword(credentialsId: 'summeracademyid', passwordVariable: 'password', usernameVariable: 'username')]) { //recall the credentials we added
-						sh "docker login -u $username -p $password <your-dockrhub-username>"																		//login to dockrhub account
+						sh "docker login -u $username -p $password"																		//login to dockrhub account
 					}
 				sh 'docker tag django-blog <your-dockrhub-username>/django-blog'																					// change the name of the image to match your DockerHub username
 				sh 'docker push <your-dockrhub-username>/django-blog'																								//push the image
-			}
-		}	
+				}
+			}	
+		}
 `
 
 Now lets Run the pipeline and test the stages you made.
