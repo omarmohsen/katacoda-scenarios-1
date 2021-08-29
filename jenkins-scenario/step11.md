@@ -1,5 +1,11 @@
 For the last step, we will add a stage to push the image we have to Docker Hub.
 
+But first, you will have to stop the running container, because the pipeline will re-run it on the same port and with the same name, which will get you an error
+
+`docker ps | grep django-blog`{{execute}}, copy the `Container ID`, and paste it in the next command.
+
+`docker stop <container-ID>`
+
 So, paste the following as your second stage after the previous one:
 
 `
@@ -14,6 +20,7 @@ So, paste the following as your second stage after the previous one:
          		}
 		}
 	}
+`
 
 Now lets Run the pipeline and test the stages you made.
 
