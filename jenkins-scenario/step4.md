@@ -20,7 +20,7 @@ So follow these steps to create your pipeline:
 
 
 
-
+`
      pipeline {
        agent {                       //Agent name specification
          node {
@@ -38,7 +38,7 @@ So follow these steps to create your pipeline:
 		}
 	}
     }
-
+`
 
 
 
