@@ -23,7 +23,7 @@ So follow these steps to configure your agent:
 
 8- For `Host`, you will need to add the host IP:
 
-`[[HOST_IP1]]`
+[[[HOST_IP]]]
 
 9- Click `Add credentials`.
 
