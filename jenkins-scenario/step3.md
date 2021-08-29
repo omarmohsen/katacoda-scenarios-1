@@ -21,7 +21,7 @@ So follow these steps to configure your agent:
 
 7- For `Launch method`, select `Launch agent via ssh`.
 
-8- For `Host`, you will need to add the host IP: **[[HOST_IP]]**.
+8- For `Host`, you will need to add the host IP: `ip addr show`{{execute}}, you will find your IP in ens3 .
 
 9- Click `Add credentials`.
 
