@@ -25,6 +25,7 @@ So follow these steps to configure your agent:
 
 `[[HOST_IP]]`{{execute}}
 
+
 9- Click `Add credentials`.
 
 a- For `Kind`, select `SSH username and private key`.
