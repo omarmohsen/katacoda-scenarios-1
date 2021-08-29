@@ -3,12 +3,12 @@ You are going to run Jenkins on a Docker container on the host.
 Dell's DevOps team already created a Jenkins Docker image, so you can use it in our scenario.
 
 Execute the following command to run the Jenkins Docker container:
+
 `
 docker run -d -u root --name jenkins \
     -p 8080:8080 -p 50000:50000 \
     -v /root/jenkins:/var/jenkins_home \
     omarmohsen/jenkins-sa
-
 `{{execute}}
 
 
