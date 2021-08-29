@@ -36,6 +36,7 @@ So follow these steps to create your pipeline:
 			}
 		}
 	}
-}`
+}
+`
 
 This is the basic structure of our pipeline, you will modify it as you proceed with the upcoming steps.
