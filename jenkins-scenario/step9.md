@@ -2,13 +2,13 @@ In this step, we will add a stage to run the image we made in the previous one
 
 Add the following stage:
 
-`
-		stage ('Run docker container'){
+
+		`stage ('Run docker container'){
 			steps{
 				sh 'docker run --rm  -d -p 8001:8000 django-blog'
 			}
 		}
-`
+		`
 
 This stage will build a Docker container for the application with the `/var/lib/jenkins/workspace/django-pipeline/docker/Dockerfile`{{open}}
 

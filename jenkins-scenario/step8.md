@@ -2,13 +2,13 @@ Running the application directly on the host is not the best practice, its bette
 
 So, we will substitute the `run python app` stage with the following:
 
-`
-		stage ('Build docker image'){
+
+		`stage ('Build docker image'){
 			steps{
 				sh 'docker build -t django-blog -f docker/Dockerfile . '
 			}
 		}
-`
+		`
 
 This stage will build a Docker container for the application with the `/var/lib/jenkins/workspace/django-pipeline/docker/Dockerfile`{{open}}
 
