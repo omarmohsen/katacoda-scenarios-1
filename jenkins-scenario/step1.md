@@ -13,13 +13,13 @@ Execute the following command to run the Jenkins Docker container:
 
 Meaning of the parameters used in the `docker run` command:
 
--d --> runs in the background
+`-d` --> runs in the background
 
---name --> name of the container running
+`--name` --> name of the container running
 
--p --> the port number where you can access the container
+`-p` --> the port number where you can access the container
 
--v --> the volume attached to the Jenkins container
+`-v` --> the volume attached to the Jenkins container
 
 
 Now lets check that our container is running

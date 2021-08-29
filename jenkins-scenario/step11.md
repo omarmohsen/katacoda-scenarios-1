@@ -2,7 +2,6 @@ For the last step, we will add a stage to push the image we have to Docker Hub.
 
 So, paste the following as your second stage after the previous one:
 
-
 `stage ('run docker container'){
 	steps{
 		script {						
@@ -14,6 +13,7 @@ So, paste the following as your second stage after the previous one:
 	}
 }
 `
+
 
 Now lets Run the pipeline and test the stages you made.
 

@@ -3,7 +3,7 @@ For the first stage, you will need to clone the repository where our application
 So, as your first stage, you will need to paste the following:
 
 `
-		stage ('clone '){
+		stage ('Cloning the reposatory'){
 			steps{
 				git url: 'https://github.com/omarmohsen/django-blog'
 			}
@@ -11,7 +11,6 @@ So, as your first stage, you will need to paste the following:
 `
 
 this stage will clone or download the files and directories on this repo to the Jenkins workspace.
-
 
 Now, Lets test the stage you made:
 
