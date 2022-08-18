@@ -1,7 +1,7 @@
 After installing Jenkins, lets access it and configure our environment.
 
-So access it from here:
-https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/
+So access it from here, choose port 8080:
+ [ACCESS PORTS]({{TRAFFIC_SELECTOR}})
 
 First, lets install all the necessary plugins that you will need, to configure and start our pipeline for the application you will run.
 
@@ -23,9 +23,8 @@ Please follow these steps to install the above plugins:
 
 4- Search for the plugins you want to install, and check their box.
 
-5- Click `Download and restart`.
+5- Click `Install without restart`.
 
-6- Check the Box `Restart Jenkins when installation is complete and no jobs are running`.
 
 
 Now you have installed the plugins you will need for creating your pipeline.

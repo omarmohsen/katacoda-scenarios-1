@@ -7,26 +7,29 @@ Agent is basically a server where Jenkins creates its workspace on, to execute t
 
 So follow these steps to configure your agent:
 
-1- Click `Manage Jenkins` from the left panel.
+1- Install Java on your machine which is a  dependency for the jenkins agent to work:
 
-2- Click `Manage Nodes`.
+`sudo apt install openjdk-11-jre`{{execute}}
 
-3- Click `New Node`.
+2- Click `Manage Jenkins` from the left panel.
 
-4- Give your agent a name, `test`.
+3- Click `Manage Nodes`.
 
-5- Select `Permanent Agent`.
+4- Click `New Node`.
 
-6- For `Remote root directory` type `/root`.
+5- Give your agent a name, `test`.
 
-7- For `Launch method`, select `Launch agent via ssh`.
+6- Select `Permanent Agent`.
 
-8- For `Host`, you will need to add the host IP:
+7- For `Remote root directory` type `/root`.
 
-`[[HOST_IP]]`{{execute}}
+8- For `Launch method`, select `Launch agent via ssh`.
 
+9- For `Host`, you will need to add the host IP, retrieve the IP from the 2nd network interface (starts with en):
 
-9- Click `Add credentials`.
+`ip a`{{execute}}
+
+10- Click `Add credentials`.
 
 a- For `Kind`, select `SSH username and private key`.
 
@@ -40,13 +43,13 @@ e- Get the Private key by executing `cat /root/.ssh/id_rsa`{{execute}}.
 
 f- Click `Private Key` check mark, then click `Add` button and add the Private key from the previous step.
 
-10 - Choose the credential that you created from the drop down.
+11- Choose the credential that you created from the drop down.
 
-11- For `host verification strategy`, select `None verifying`.
+12- For `host verification strategy`, select `None verifying`.
 
-12- Click `Save`.
+13- Click `Save`.
 
-13- To view the progress, Click you agent you just created, the Click `logs`.
+14- To view the progress, Click you agent you just created, the Click `logs`.
 
 Wait till its successfully connected.
 
