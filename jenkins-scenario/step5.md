@@ -8,6 +8,7 @@ stage('Cloning the repository') {
     git url: 'https://github.com/omarmohsen/django-blog'
   }
 }
+
 ```
 
 this stage will clone or download the files and directories on this repo to the Jenkins workspace.
