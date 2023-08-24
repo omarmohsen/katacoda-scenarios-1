@@ -9,8 +9,9 @@ stage('Install python requirements') {
     sh 'pip3 install -r requirements.txt'
   }
 }
-```		
-In the `/root/workspace/django-pipeline/requirements.txt`  file, you will find a list of packages that python will need to run the Django application
+```
+
+In the /root/workspace/django-pipeline/requirements.txt file, you will find a list of packages that python will need to run the Django application
 
 Now lets Run the pipeline and test the stages you made.
 
