@@ -7,8 +7,8 @@ stage('run tests') {
     sh 'python3 manage.py test blog'
   }
 }
-
-```		
+```
+		
 Now lets Run the pipeline and test the stages you made.
 
 If it passed, proceed with the next step, if not please troubleshoot and test again.
