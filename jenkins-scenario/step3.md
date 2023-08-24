@@ -13,7 +13,7 @@ So follow these steps to configure your agent:
 
 2- Click `Manage Jenkins` from the left panel.
 
-3- Click `Manage Nodes`.
+3- Click `Nodes`.
 
 4- Click `New Node`.
 
