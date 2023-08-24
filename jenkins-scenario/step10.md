@@ -25,17 +25,17 @@ Then do the following to create a Jenkins credentials:
 
 5- On the top left, click `Add Credentials`.
 
-5- For `Kind`, select `Username and Password`
+6- For `Kind`, select `Username and Password`
 
-6- For `Scope`, select `Global`.
+7- For `Scope`, select `Global`.
 
-7- For `Username`, type `<your-dockrhub-username>`.
+8- For `Username`, type `<your-dockrhub-username>`.
 
-8- For `Password`, type `<your-dockrhub-username>`.
+9- For `Password`, type `<your-dockrhub-username>`.
 
-9- For `ID`, type `summeracademyid`
+10- For `ID`, type `summeracademyid`
 
-10- Click `Save`.
+11- Click `Save`.
 
 Now your credentials are created, you will use this ID to recall your credentials in the pipeline.
 
