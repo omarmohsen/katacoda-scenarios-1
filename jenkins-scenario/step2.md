@@ -23,7 +23,7 @@ Please follow these steps to install the above plugins:
 
 4- Search for the plugins you want to install, and check their box.
 
-5- Click `Install without restart`.
+5- Click on  `Install`.
 
 
 
