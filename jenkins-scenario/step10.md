@@ -15,14 +15,15 @@ If you don't have DockerHub account, follow these teps:
 
 
 Then do the following to create a Jenkins credentials:
+1- Go to `Dashboard` from the left panel.
 
-1- Click `Manage Jenkins` from the left panel.
+2- Click `Manage Jenkins` from the left panel.
 
-2- Under `security` section, click `Manage Credentials`.
+3- Under `security` section, click `Manage Credentials`.
 
-3- Click any domain in the `Domain` column.
+4- Click on (global) domain in the `Domain` column.
 
-4- On the top left, click `Add Credentials`.
+5- On the top left, click `Add Credentials`.
 
 5- For `Kind`, select `Username and Password`
 
