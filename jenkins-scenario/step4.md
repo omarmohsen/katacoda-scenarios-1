@@ -6,17 +6,19 @@ you will give you the syntax to paste it and describe in details what exactly th
 
 So follow these steps to create your pipeline:
 
-1- Click `New Item`.
+1- Click `Dashboard`.
 
-2- Select `Pipeline`.
+2- `New Item`.
 
-3- Give it a name, `django-pipeline`.
+3- Select `Pipeline`.
 
-4- Click `Ok`, this will open a new page for you.
+4- Give it a name, `django-pipeline`.
 
-5- Scroll to the bottom to the `Pipeline` section, this is where you will type your groovy code in.
+5- Click `Ok`, this will open a new page for you.
 
-6- Paste the following in the `Pipeline` section, this is the basic structure of the pipeline.
+6- Scroll to the bottom to the `Pipeline` section, this is where you will type your groovy code in.
+
+7- Paste the following in the `Pipeline` section, this is the basic structure of the pipeline.
 
 
 ```
