@@ -9,6 +9,7 @@ stage('Install python requirements') {
     sh 'pip3 install -r requirements.txt'
   }
 }
+
 ```		
 
 in the `/root/workspace/django-pipeline/requirements.txt`{{open}} file, you will find a list of packages that python will need to run the Django application
