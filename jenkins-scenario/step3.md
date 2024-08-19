@@ -9,7 +9,7 @@ So follow these steps to configure your agent:
 
 1- Install Java on your machine which is a  dependency for the jenkins agent to work:
 
-`sudo apt install openjdk-11-jre`{{execute}}
+`sudo apt install openjdk-17-jre`{{execute}}
 
 2- Click `Manage Jenkins` from the left panel.
 
