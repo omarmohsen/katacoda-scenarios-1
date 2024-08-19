@@ -22,6 +22,8 @@ You will need to install the following plugins to help you in your pipeline:
 - Pipeline
 
 - Docker
+  
+- Blue Ocean
 
 Please follow these steps to install the above plugins:
 
