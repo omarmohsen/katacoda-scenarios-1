@@ -3,7 +3,13 @@ After installing Jenkins, lets access it and configure our environment.
 So access it from here, choose port 8080:
  [ACCESS PORTS]({{TRAFFIC_SELECTOR}})
 
-First, lets install all the necessary plugins that you will need, to configure and start our pipeline for the application you will run.
+First, we need to fix the proxy error:
+1- Click `Manage Jenkins`
+2- Click `Security`
+3- Choose `Default Crumb Issuer`
+4- Check `Enable proxy compatability` and Save
+
+Second, lets install all the necessary plugins that you will need, to configure and start our pipeline for the application you will run.
 
 You will need to install the following plugins to help you in your pipeline:
 
